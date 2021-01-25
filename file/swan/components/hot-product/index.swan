@@ -1,0 +1,27 @@
+<view class="hot-product">
+    <view class="top">
+        <view class="title">热门产品</view>
+        <view class="more" bind:tap="handleToMorePath">更多</view>
+    </view>
+    <view class="content" s-for="item in list">
+        <template is="hot-product-item" data="{{item}}"/>
+    </view>
+</view>
+
+<template name="hot-product-item">
+    <view class="product-item" data-url="{{jumpUrl}}" bind:tap="handleToPath">
+        <view class="item-img">
+            <image src="{{icon}}" mode="scaleToFill" class="img"/>
+        </view>
+        <view class="item-content">
+            <view class="title">
+                <view class="main-title">{{bigTitle}}</view>
+                <view class="sub-title">{{smallTitle}}</view>
+            </view>
+            <view class="desc">
+                <text class="num">{{beginStep}}<text>
+                <text class="txt">元起投<text>
+            </view>
+        </view>
+    </view>
+</template>

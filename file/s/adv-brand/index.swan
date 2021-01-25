@@ -1,0 +1,4 @@
+<view class="brand">
+    <view class="title">优选品牌</view>
+    <image src="/images/home/brand.png" mode="widthFix"/>
+</view>

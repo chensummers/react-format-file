@@ -1,0 +1,17 @@
+.home-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head swan-image {
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    width: 122rpx;
+    height: 40rpx;
+}
+.contact-img {
+    width: 54rpx;
+    height: 54rpx;
+}

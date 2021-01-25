@@ -1,0 +1,10 @@
+<view class="ask-area">
+    <view class="ask-item" s-for="ask in productAsks">
+        <view class="ask-title"> {{ask.title}}</view>
+        <view class="ask-subtitle"> {{ask.subTitle}}</view>
+        <view class="ask-bottom">
+            <view class="ask-btn" data-path="{{ask.path}}" bind:tap="handleTab" data-url="{{ask.url}}">{{ask.btnTx}}</view>
+            <view class="ask-icon"><image src="{{ask.icon}}"/></view>
+        </view>
+    </view>
+</view>

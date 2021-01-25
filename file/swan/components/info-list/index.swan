@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="title">
+    <text class="main">保险资讯</text>
+    <text class="desc">72小时聚焦</text>
+  </view>
+  <view class="list" >
+    <info-item s-for="infolist" data="{{item}}">
+  </view>
+  <view class="more" s-if="{{isShowMore}}">
+    <text class="txt" bind:tap="handleToPath">查看更多</text>
+  </view>
+</view>

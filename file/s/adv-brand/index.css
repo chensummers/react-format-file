@@ -1,0 +1,15 @@
+.brand {
+    background: #fff;
+    padding: 20rpx;
+    margin-top: 20rpx;
+    border-radius: 8rpx;
+}
+.title {
+    font-size: 30rpx;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+.brand swan-image {
+    width: 100%;
+}

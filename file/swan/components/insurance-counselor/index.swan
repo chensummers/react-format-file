@@ -1,0 +1,5 @@
+<view class="insurance">
+    <image preview="{{false}}" src="{{img}}" mode="widthFix"/>
+    <view class="title">保险顾问</view>
+    <view class="btn" bind:tap="handleToPath">立即咨询</view>
+</view>

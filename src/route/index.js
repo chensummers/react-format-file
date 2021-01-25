@@ -11,7 +11,6 @@ function RouterCompontent({ history, app, ...rest }) {
                 <Layout>
                     {
                         routes.map(({ path,exact, ...dynamics }, index) => {
-                            console.log('/index.js [13]--1','path',path);
                             return <Route key={index} path={path} exact={exact} component={dynamic({ app, ...dynamics })} />
                         })
                     }

@@ -1,0 +1,6 @@
+<view class="home-head">
+    <image class="logo" src="/images/home/logo.png"></image>
+    <contact-field>
+        <image class="contact-img" src="/images/my/service.png"></image>
+    </contact-field>
+</view>

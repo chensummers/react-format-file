@@ -1,0 +1,6 @@
+<view class="tab-area">
+    <view class="tab-item" s-for="tab in tabs" bind:tap="handleTab" data-id="{{tab.id}}">
+        <view class="icon"><image src="{{tab.homeIcon}}"/></view>
+        <view class="tab-text"> {{tab.name}}</view>
+    </view>
+</view>

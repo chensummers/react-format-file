@@ -75,7 +75,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "file": "node file/fs.js",
+    "del": "node file/del.js"
   },
   "eslintConfig": {
     "extends": [

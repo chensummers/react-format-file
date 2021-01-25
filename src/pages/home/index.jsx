@@ -32,9 +32,11 @@ class Index extends React.Component {
 export default connect(
     ({
         global,
-        home
+        home,
+        ...rest
     })=>({
         global,
-        home
+        home,
+        ...rest
     })
 )(Index);

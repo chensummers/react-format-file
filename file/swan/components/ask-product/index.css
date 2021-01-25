@@ -1,0 +1,39 @@
+.ask-area {
+    display: flex;
+    justify-content: space-between;
+}
+.ask-item {
+    padding: 20rpx 10rpx 10rpx 20rpx;
+    width: 49%;
+    background-color: #fff;
+    border-radius: 8rpx;
+}
+
+.ask-title {
+    color: #333;
+    font-size: 30rpx;
+    font-weight: 500;
+}
+.ask-subtitle {
+    color: #666;
+    font-size: 24rpx;
+}
+.ask-bottom {
+    margin-top: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ask-bottom swan-image {
+    width: 108rpx;
+    height: 88rpx;
+}
+.ask-btn {
+    padding: 0 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 40rpx;
+    font-size: 24rpx;
+    background-color: #5473F6;
+    color: #fff;
+}

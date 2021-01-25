@@ -34,7 +34,7 @@ function Index(props) {
   useEffect(() => {
     if (tab === 1) {
       setVolidFormat({
-        isSwanBtnDisabled: !SWAN_CSS_REG.test(originVal),
+        isSwanBtnDisabled:!SWAN_CSS_REG.test(originVal)
       })
     }
     if (tab === 2) {
@@ -50,7 +50,7 @@ function Index(props) {
       return;
     }
     setFormatVal(originVal.replace(SWAN_CSS_REG, (o,a,b,c,d) => {
-      return `${a} ${b*2}rpx`
+      return `${a} ${Math.floor(b/2)}px`
     }))
   }
 
@@ -60,12 +60,11 @@ function Index(props) {
       return;
     }
     setFormatVal(originVal.replace(HTML_CSS_REG, (o,a,b,c,d) => {
-      return `${a} ${Math.floor(b/2)}px`
+      return `${a} ${b*2}rpx`
     }))
   }
 
   const debounceInput = debounce(e => {
-    console.log('/viewReg.jsx [67]--1','e-input',e,e.target.value);
     setOriginVal(e.target.defaultValue)
   }, 100);
 
@@ -76,6 +75,7 @@ function Index(props) {
     setFormatVal(null)
   };
 
+  console.log('/cssReg.jsx [79]--1','volidFormat',volidFormat);
   return (
     <div className="file">
       <h2>Html/Swan CSS format</h2>

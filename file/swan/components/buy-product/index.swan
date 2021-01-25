@@ -1,0 +1,30 @@
+<view class="buy-product">
+    <view class="top">
+        <view class="title">如何选购合适的保险</view>
+    </view>
+
+    <template is="buy-product-adv"/>
+    <view class="content" s-for="item in list">
+        <template is="buy-product-item" data="{{item}}"/>
+    </view>
+</view>
+
+<template name="buy-product-adv">
+    <view class="adv">
+        <view class="adv-content">
+            <view class="advtor"><image src="/images/home/consult_icon.png" mode="widthFix" /></view>
+            <view>
+                <view class="ad-sub-title">百度优选保险咨询</view>
+                <view class="ad-title">为您解答保险相关疑问</view>
+            </view>
+        </view>
+        <view class="adv-btn" bind:tap="handleGoConsult">立即咨询</view>
+    </view>
+</template>
+
+<template name="buy-product-item">
+    <view class="product-item" data-url="{{jumpUrl}}" data-id="{{id}}" bind:tap="handToPath">
+        <view class="item-title">{{bigTitle}}</view>
+        <view class="sub-title">{{smallTitle}}</view>
+    </view>
+</template>

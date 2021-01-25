@@ -15,7 +15,7 @@ export const HTML_REG_VAL = {
 
 export const SWAN_REG = /(view)|(image)|(text)|(class=)/g;
 export const HTML_REG = /(div)|(img)|(span)|(className=)/g;
-export const SWAN_CSS_REG = /(\s*)(\d+)px/g;
-export const HTML_CSS_REG = /(\s*)(\d+)rpx/g;
+export const SWAN_CSS_REG = /(\s*)(\d+)rpx/g;
+export const HTML_CSS_REG = /(\s*)(\d+)px/g;
 export const SWAN_TITLE = 'swan';
 export const HTML_TITLE = 'html';

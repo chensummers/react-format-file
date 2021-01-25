@@ -1,0 +1,14 @@
+Component({
+    name:'adv-brand',
+    data:{
+        productHots:[],
+    },
+    created(){
+        this.setData({
+            productHots:[
+                {title:'私人保险顾问',subTitle:'真人顾问，专属咨询服务',btnTx:'立即咨询',icon:'/images/home/ask.png',path:''},
+                {title:'教你买保险',subTitle:'各种险种全面答疑',btnTx:'立即查看',icon:'/images/home/counselor.png',path:''},
+            ],
+        })
+    }
+})

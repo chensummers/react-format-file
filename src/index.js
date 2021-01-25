@@ -11,10 +11,23 @@ const app = dva({
   }
 })
 
+const files = require.context('./models',false,/^(?!index).*\.js$/)
+files.keys().map(key=>{
+    // if(key === './index.config.js') return;
+    if(files(key).default) {
+      console.log('/index.js [18]--1',
+        `
+          key-${key},
+          ${files(key)}
+        `
+      );
+      app.model(files(key).default)
+  }
+})
 // 注册model, 会这样会自动导入global的model
-app.model(require('./models/global').default)
-app.model(require('./models/home').default)
-app.model(require('./models/count').default)
+// app.model(require('./models/global').default)
+// app.model(require('./models/home').default)
+// app.model(require('./models/count').default)
 
 // 注册路由
 app.router(require('./route/index').default)
